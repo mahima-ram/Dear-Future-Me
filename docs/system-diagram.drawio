@@ -1,92 +1,98 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="W143UFdQLJXE5CfGB-7J">
-    <mxGraphModel dx="1935" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram name="Page-1" id="2-nROs1EvD_LTaHI1IlM">
+    <mxGraphModel dx="976" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-22" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="940" width="490" x="170" y="70" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="User&lt;div&gt;Writes and manages future letters&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="285" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-1" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="START: Main.java&lt;div&gt;Application entry point - launches JavaFX&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="384.05405405405406" x="39.729729729729726" as="geometry" />
-        </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-3" edge="1" parent="BwVaehTb1JvU_w_vh6oE-22" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" target="BwVaehTb1JvU_w_vh6oE-4" value="">
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="238.37837837837836" y="76.21621621621621" as="sourcePoint" />
-            <mxPoint x="238.37837837837836" y="139.72972972972974" as="targetPoint" />
+            <mxPoint x="425" y="110" as="sourcePoint" />
+            <mxPoint x="425" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-4" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="JavaFX User Interface&lt;div&gt;Dashboard and user input screens&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="397.2972972972973" x="39.729729729729726" y="139.72972972972974" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="React Website&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="179" width="365" x="237.75" y="171" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-5" edge="1" parent="BwVaehTb1JvU_w_vh6oE-22" source="BwVaehTb1JvU_w_vh6oE-4" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="172.16216216216216" y="241.35135135135135" as="sourcePoint" />
-            <mxPoint x="238.37837837837836" y="279.4594594594595" as="targetPoint" />
+            <mxPoint x="410" y="369" as="sourcePoint" />
+            <mxPoint x="410" y="419" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-6" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Expense Management&lt;div&gt;Add, edit, delete, categorize expenses&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="185.4054054054054" y="266.7567567567568" as="geometry" />
-        </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-7" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Savings Goals&lt;div&gt;Create goals and record contributions&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="185.4054054054054" y="393.7837837837838" as="geometry" />
-        </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-8" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Budget Management&lt;div&gt;Set limits and track spending&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="185.4054054054054" x="304.5945945945946" y="266.7567567567568" as="geometry" />
-        </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-9" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Statistical Analysis&lt;div&gt;Calculate averages and provide recommendations&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="185.4054054054054" x="304.5945945945946" y="393.7837837837838" as="geometry" />
-        </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-11" edge="1" parent="BwVaehTb1JvU_w_vh6oE-22" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="264.86486486486484" y="470" as="sourcePoint" />
-            <mxPoint x="264.86486486486484" y="546.2162162162163" as="targetPoint" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.6142" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="409" />
+            </Array>
+            <mxPoint x="440" y="419" as="sourcePoint" />
+            <mxPoint x="440" y="369" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-12" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Data Management / Gson&lt;div&gt;Loads and saves application data&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="304.5945945945946" x="86.08108108108108" y="571.6216216216217" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Supabase&lt;div&gt;Backend Services&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="365" x="242" y="430" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-13" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Local JSON Storage&lt;div&gt;Expenses, budgets, savings goals&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="304.5945945945946" x="86.08108108108108" y="711.3513513513514" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Authentication&lt;div&gt;Sign up and login&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="171.25" x="249.5" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-14" parent="BwVaehTb1JvU_w_vh6oE-22" style="rounded=0;whiteSpace=wrap;html=1;" value="Analytics Dashboard&lt;div&gt;Spending summaries, category charts, monthly trends, savings progress&lt;/div&gt;" vertex="1">
-          <mxGeometry height="76.21621621621621" width="423.7837837837838" x="26.486486486486488" y="863.7837837837839" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Database&lt;div&gt;Users, letters, dates, status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="171.25" x="426.5" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-15" parent="BwVaehTb1JvU_w_vh6oE-22" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Read &amp;amp; update financial data" vertex="1">
-          <mxGeometry height="38.108108108108105" width="165.54054054054052" x="258.2432432432432" y="495.40540540540536" as="geometry" />
-        </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-16" edge="1" parent="BwVaehTb1JvU_w_vh6oE-22" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="225.1351351351351" y="546.2162162162163" as="sourcePoint" />
-            <mxPoint x="225.1351351351351" y="470" as="targetPoint" />
+            <mxPoint x="424.5" y="550" as="sourcePoint" />
+            <mxPoint x="424.5" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-17" parent="BwVaehTb1JvU_w_vh6oE-22" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="User actions &amp;amp; input" vertex="1">
-          <mxGeometry height="38.108108108108105" width="99.32432432432432" x="195.99999999999997" y="292.1621621621622" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Scheduled Backend Function&lt;div&gt;Checks delivery dates and processes eligible letters&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="365" x="242.5" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-18" parent="BwVaehTb1JvU_w_vh6oE-22" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Launches" vertex="1">
-          <mxGeometry height="38.108108108108105" width="99.32432432432432" x="244.99999999999997" y="88.91891891891892" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Email Service&lt;div&gt;Sends email notification to the user&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="365" x="242.5" y="740" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-19" edge="1" parent="BwVaehTb1JvU_w_vh6oE-22" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="User receives email&lt;div&gt;Returns to the website and opens the letter&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="365" x="242.5" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="225.1351351351351" y="660.5405405405405" as="sourcePoint" />
-            <mxPoint x="225.1351351351351" y="698.6486486486485" as="targetPoint" />
+            <mxPoint x="424.5" y="680" as="sourcePoint" />
+            <mxPoint x="424.5" y="730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-20" edge="1" parent="BwVaehTb1JvU_w_vh6oE-22" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="258.2432432432432" y="698.6486486486485" as="sourcePoint" />
-            <mxPoint x="258.2432432432432" y="660.5405405405405" as="targetPoint" />
+            <mxPoint x="424.5" y="810" as="sourcePoint" />
+            <mxPoint x="424.5" y="860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-21" parent="BwVaehTb1JvU_w_vh6oE-22" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Reads &amp;amp; writes JSON files" vertex="1">
-          <mxGeometry height="38.108108108108105" width="145.67567567567565" x="278.10810810810807" y="660.5405405405405" as="geometry" />
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Visits website / signs in" vertex="1">
+          <mxGeometry height="30" width="140" x="442.63" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="BwVaehTb1JvU_w_vh6oE-23" edge="1" parent="BwVaehTb1JvU_w_vh6oE-22" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="240" y="800" as="sourcePoint" />
-            <mxPoint x="240" y="850" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Requests and responses through Supabase" vertex="1">
+          <mxGeometry height="30" width="140" x="457.75" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Scheduled task checks for letters that are due" vertex="1">
+          <mxGeometry height="30" width="140" x="442.13" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sends notification request" vertex="1">
+          <mxGeometry height="30" width="140" x="442.13" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Email notification delivered" vertex="1">
+          <mxGeometry height="30" width="140" x="449.5" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Landing Page&lt;div&gt;Introduction and navigation&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="260.12" y="213" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="My Letters Dashboard&lt;br&gt;&lt;div&gt;View upcoming and delivered letters&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="260.12" y="281" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Letter Editor&lt;div&gt;Write, edit, and schedule letters&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="431" y="213" as="geometry" />
+        </mxCell>
+        <mxCell id="02cVAN6ty3u_MRGI2R0q-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Letter Reveal Page&lt;br&gt;&lt;div&gt;Read letters after their scheduled date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="429.5" y="281" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

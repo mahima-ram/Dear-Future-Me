@@ -1,50 +1,54 @@
-# FinSight
+# Dear Future Me
 
 ## Project Overview
 
-FinSight is a Java-based personal finance application designed to help users organize their expenses, manage monthly budgets, and understand their spending habits.
+Dear Future Me is a web application that allows users to write personal letters to their future selves, schedule a date for their delivery, and revisit their thoughts, goals, and memories at meaningful moments in their lives.
 
-The goal of this project is to make personal finance management easier by providing a simple way to track expenses, monitor savings goals, and view spending patterns through summaries and visualizations.
+The goal of this project is to create a simple and meaningful space where users can reflect on their present experiences, express their hopes for the future, and reconnect with their past thoughts when the time comes.
 
-FinSight will store financial information locally, allowing users to manage their finances without connecting their bank accounts or sharing sensitive financial information.
+Users will be able to access their letters from anywhere through a website, with scheduled email notifications reminding them when their letters are ready to be opened.
 
 ## Project Goals
 
-- Make expense tracking simple and organized.
-- Help users monitor monthly spending and stay within budgets.
-- Allow users to create and track savings goals.
-- Provide visual summaries of spending habits.
-- Identify unusual spending patterns through basic statistical analysis.
+- Provide a simple and personal space for writing letters to one's future self.
+- Allow users to schedule letters for specific future dates.
+- Help users reflect on their personal growth, goals, and experiences over time.
+- Allow users to securely save and manage their letters.
+- Create a beautiful, minimalistic, and easy-to-use website.
+- Make scheduled letters accessible from anywhere.
 
 ## MVP Scope (Version 1.0)
 
-The initial version of FinSight will focus on the following features:
+The initial version of Dear Future Me will focus on the following features:
 
-1. **Expense Tracking:** Allow users to manually add, edit, and delete expenses, including the amount, date, description, and category.
-2. **Expense Categorization:** Organize expenses into categories such as food, transportation, shopping, and entertainment.
-3. **Monthly Budget Tracking:** Allow users to set monthly spending limits for different categories and monitor how much they have spent and how much remains.
-4. **Savings Goals:** Allow users to create savings goals and manually record contributions toward each goal.
-5. **Analytics Dashboard:** Display spending summaries, category breakdowns, monthly spending trends, and savings progress.
-6. **Basic Statistical Analysis:** Calculate spending averages, compare spending across categories and months, and identify unusually high expenses.
+1. **User Accounts:** Allow users to create accounts and securely log in to access their personal letters.
+2. **Letter Writing:** Allow users to write, edit, and save letters addressed to their future selves.
+3. **Scheduled Delivery:** Allow users to select a future date for each letter to become available.
+4. **My Letters Dashboard:** Display upcoming and delivered letters in an organized timeline.
+5. **Email Notifications:** Send users an email notification when a scheduled letter is ready to be opened.
+6. **Letter Reveal:** Allow users to open and read their letters once the scheduled delivery date arrives.
+7. **Responsive Website Design:** Create a clean, minimalistic interface that works across desktop and mobile devices.
 
 ## Future Plans (Version 2.0+)
 
 Features that may be added after the MVP include:
 
-- Machine learning-based spending pattern analysis.
-- Automatic expense categorization experiments.
-- Spending predictions and forecasts.
-- More advanced anomaly detection.
-- Personalized financial insights and recommendations.
-- Advanced data visualizations.
-- A travel budget planner for tracking trip expenses and allocating budgets to lodging, transportation, food, and activities.
+- Adding photos or other attachments to letters.
+- Providing optional writing prompts for users who need inspiration.
+- Creating recurring letters for birthdays, graduations, and other milestones.
+- Adding customizable letter templates and themes.
+- Allowing users to organize letters using tags or categories.
+- Creating a personal timeline to reflect on previously delivered letters.
+- Adding more customization to the letter-opening experience.
 
 ## Technology Stack
 
-- **Programming Language:** Java
-- **Libraries and tools:** Weka (for machine learning), JavaFX (graphical interfaces), Maven, Git/Github
-- **Data Storage:** CSV files to keep categories
-- **Data Sources:**  User-provided data or built-in sample financial datasets
+- **Programming Language:** JavaScript
+- **Libraries and tools:** React, Vite, HTML, CSS, Git/GitHub
+- **Backend and Authentication:** Supabase
+- **Data Storage:** Supabase database for user accounts and letters
+- **Email Notifications:** Email delivery service integrated with a server-side function and scheduled task
+- **Hosting:** Cloudflare Pages
 - **Development Environment:** IntelliJ IDEA
 
 ## Project Status
