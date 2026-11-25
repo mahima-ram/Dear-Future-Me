@@ -10,6 +10,8 @@
   border-right: 1px solid #e2d8c8;
   padding: 28px 16px;
   box-sizing: border-box;
+  position: relative;
+  transform: none;
 }
 
 .sidebar-brand {
@@ -38,6 +40,11 @@
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  text-align: left;
 }
 
 .nav-item svg {
@@ -55,14 +62,6 @@
   color: #514332;
   font-weight: 600;
 }
-
-.app-layout main {
-  flex: 1;
-  min-width: 0;
-  padding: 40px;
-  background-color: #faf8f2;
-}
-
 
 .workspace {
   flex: 1;
@@ -168,3 +167,177 @@
   font-size: 11px;
   color: #958570;
 }
+
+
+.letter-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+.delivery-date {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.delivery-date label {
+  font-size: 12px;
+  color: #766b5d;
+}
+
+.delivery-date input {
+  padding: 10px 12px;
+  border: 1px solid #dfd2bf;
+  border-radius: 8px;
+  background-color: #faf8f2;
+  color: #665744;
+  font: inherit;
+  font-size: 13px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.action-buttons button {
+  padding: 12px 19px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.save-button {
+  border: 1px solid #d6c8b5;
+  background: transparent;
+  color: #665744;
+}
+
+.save-button:hover {
+  background-color: #e9decd;
+}
+
+.schedule-button {
+  border: 1px solid #687761;
+  background-color: #687761;
+  color: white;
+}
+
+.schedule-button:hover {
+  background-color: #56664f;
+}
+
+/* Hidden on desktop */
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* Mobile navigation */
+@media (max-width: 760px) {
+  .app-layout {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    z-index: 30;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    padding: 76px 20px 28px;
+  }
+
+  .sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-brand {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .sidebar-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .nav-item {
+    margin-bottom: 0;
+  }
+
+  .workspace {
+    width: 100%;
+    flex: 1;
+    padding: 76px 24px 36px;
+    position: relative;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    z-index: 31;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #e2d8c8;
+    border-radius: 10px;
+    background-color: #eee5d6;
+    color: #665744;
+    cursor: pointer;
+  }
+
+  .mobile-menu-toggle svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .workspace {
+    padding: 76px 16px 28px;
+  }
+
+  .welcome-section h1 {
+    font-size: 32px;
+  }
+
+  .letter-card {
+    padding: 22px 18px;
+  }
+
+  .letter-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .letter-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+}
+
