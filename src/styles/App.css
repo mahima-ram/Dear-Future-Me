@@ -341,3 +341,85 @@
   }
 }
 
+/* My Letters page */
+
+.my-letters-section {
+  max-width: 850px;
+}
+
+.letters-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.letters-list-header h2 {
+  font-size: 19px;
+  color: #514638;
+  font-weight: 500;
+}
+
+.letters-list-header span {
+  font-size: 13px;
+  color: #998a75;
+}
+
+.letters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.saved-letter-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background-color: #f1e8d9;
+  border: 1px solid #e5d9c7;
+  border-radius: 12px;
+}
+
+.saved-letter-info {
+  min-width: 0;
+}
+
+.saved-letter-info h3 {
+  color: #514638;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  overflow-wrap: anywhere;
+}
+
+.saved-letter-info p {
+  color: #918574;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+.saved-letter-info span {
+  color: #998a75;
+  font-size: 11px;
+}
+
+.empty-letters {
+  padding: 32px;
+  text-align: center;
+  color: #918574;
+  background-color: #f1e8d9;
+  border-radius: 12px;
+}
+
+@media (max-width: 480px) {
+  .saved-letter-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
