@@ -2,37 +2,7 @@ import './styles/App.css'
 import { PenLine, BookOpen, CalendarDays, Menu, X, LockKeyhole} from 'lucide-react'
 import {useState, useEffect} from 'react'
 import { supabase } from './lib/supabase'
-
-
-function loadDraft() {
-    const savedDraft = localStorage.getItem('dearFutureMeDraft')
-
-    if (!savedDraft) {
-        return {
-            text: '',
-            deliveryDate: '',
-        }
-    }
-
-    try {
-        const parsedDraft = JSON.parse(savedDraft)
-
-        if (parsedDraft && typeof parsedDraft === 'object') {
-            return {
-                text: parsedDraft.text ?? '',
-                deliveryDate: parsedDraft.deliveryDate ?? '',
-            }
-        }
-    } catch {
-        // The saved value was plain text from our earlier version.
-    }
-
-    // Keep any draft saved before we introduced the object format.
-    return {
-        text: savedDraft,
-        deliveryDate: '',
-    }
-}
+import Auth from './pages/Auth'
 
 function loadLetters() {
     const savedLetters = localStorage.getItem('dearFutureMeLetters')
@@ -114,11 +84,38 @@ function App() {
 
     const today = new Date()
 
+    const [session, setSession] = useState(null)
+    const [authLoading, setAuthLoading] = useState(true)
+    const [isPasswordRecovery, setIsPasswordRecovery] = useState(false)
+
     const todayString = [
         today.getFullYear(),
         String(today.getMonth() + 1).padStart(2, '0'),
         String(today.getDate()).padStart(2, '0'),
     ].join('-')
+
+    useEffect(() => {
+        // Check whether a user is already signed in
+        supabase.auth.getSession().then(({ data: { session } }) => {
+            setSession(session)
+            setAuthLoading(false)
+        })
+
+        // Listen for login and logout events
+        const {
+            data: { subscription },
+        } = supabase.auth.onAuthStateChange((event, session) => {
+            setSession(session)
+            setAuthLoading(false)
+
+            if (event === 'PASSWORD_RECOVERY') {
+                setIsPasswordRecovery(true)
+            }
+        })
+
+        // Clean up the listener when the component unmounts
+        return () => subscription.unsubscribe()
+    }, [])
 
     async function testSupabaseConnection() {
         const { data, error } = await supabase
@@ -131,6 +128,14 @@ function App() {
         }
 
         console.log('Supabase connected successfully!', data)
+    }
+
+    async function handleSignOut() {
+        const { error } = await supabase.auth.signOut()
+
+        if (error) {
+            console.error('Error signing out:', error.message)
+        }
     }
 
     function handleSaveDraft() {
@@ -262,6 +267,22 @@ function App() {
         }, 1400)
     }
 
+    if (authLoading) {
+        return <p>Loading...</p>
+    }
+
+    if (isPasswordRecovery) {
+        return (
+            <Auth
+                mode="reset"
+                onPasswordResetComplete={() => setIsPasswordRecovery(false)}
+            />
+        )
+    }
+
+    if (!session) {
+        return <Auth />
+    }
 
     return (
       <div className="app-layout">
@@ -318,6 +339,15 @@ function App() {
                       </li>
                   </ul>
               </nav>
+
+              <div className="sidebar-footer">
+                  <button
+                      className="sign-out-button"
+                      onClick={handleSignOut}
+                  >
+                      Sign Out
+                  </button>
+              </div>
 
           </aside>
           <main className="workspace">

@@ -618,6 +618,33 @@
   overflow-wrap: anywhere;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 20px 0;
+}
+
+.sign-out-button {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #dfd2bf;
+  border-radius: 8px;
+  color: #766b5d;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sign-out-button:hover {
+  background-color: #e5dac9;
+}
+
 
 
 
