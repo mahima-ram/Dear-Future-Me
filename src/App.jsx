@@ -1,6 +1,7 @@
 import './styles/App.css'
 import { PenLine, BookOpen, CalendarDays, Menu, X, LockKeyhole} from 'lucide-react'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import { supabase } from './lib/supabase'
 
 
 function loadDraft() {
@@ -119,6 +120,18 @@ function App() {
         String(today.getDate()).padStart(2, '0'),
     ].join('-')
 
+    async function testSupabaseConnection() {
+        const { data, error } = await supabase
+            .from('letters')
+            .select('*')
+
+        if (error) {
+            console.error('Supabase connection error:', error.message)
+            return
+        }
+
+        console.log('Supabase connected successfully!', data)
+    }
 
     function handleSaveDraft() {
         const now = new Date().toISOString()
@@ -260,6 +273,11 @@ function App() {
 
               <nav className="sidebar-nav">
                   <ul>
+                      <li>
+                          <button onClick={testSupabaseConnection}>
+                              Test Supabase Connection
+                          </button>
+                      </li>
                       <li>
                           <button
                               type="button"
